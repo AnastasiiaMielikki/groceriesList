@@ -1,0 +1,81 @@
+body {
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    background-image: url(https://img.freepik.com/free-vector/seamless-pattern-large-amount-vegetables-white-background_1284-42258.jpg?w=826&t=st=1678372411~exp=1678373011~hmac=0b2e0431345b412692facca2a24a74634ca7721e70f9bcca8f5497c9131671d3);
+    background-repeat: repeat;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    margin: 50px auto;
+    height: calc(100vh - 100px);
+    width: 50%;
+}
+img {
+    width: 400px;
+    height: auto;
+}
+.list__title {
+    display: none;
+}
+
+label {
+    margin: 25px 5px;
+}
+
+#remove_items {
+    color: #302B29;
+    padding: 30px;
+}
+
+#add_btn {
+    background-color: #01A88A;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+#add_btn:hover {
+    background-color: darkslategray;
+}
+
+#remove_btn {
+    background-color: lightgray;
+    color: #000;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    margin: 10px;
+    padding: 10px 15px;
+}
+
+select {
+    font-style: 0.85em;
+    text-align: center;
+    width: 200px;
+    margin: 50px 10px;
+    padding: 5px 0;
+    border: 2px solid darkgray;
+}
+
+@media (max-width: 800px) {
+    .list__header img {
+        display: none;
+    }
+    .list__title {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 45px;
+    }
+    .container {
+        width: 90%;
+    }
+}
